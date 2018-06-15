@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Google Summer of Code 2018</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./theme/css/main.css" />
+</head>
+<body>
+
+    <div class="main-nav-container">
+
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-lg-2-3">
+                <div class="main-nav">
+                    <ul class="main-nav-list">
+                        <li class="main-nav-item"><a href="./" class="pure-menu-link">Anant Joshi</a></li>
+                        <li class="main-nav-item"><a href="https://github.com/anant-joshi/" class="pure-menu-link">GitHub</a></li>
+
+                        <li class="main-nav-item active"><a href="./category/gsoc.html" class="pure-menu-link">GSoC</a></li>
+                    </ul>
+                </div>
+             </div>
+
+             <div class="pure-u-1 pure-u-lg-1-3"></div>
+        </div>
+
+    </div>
+
+
+<div class="page-container">
+    <div class="entry-content">
+        <div class="post-meta pure-g">
+            <div class="pure-u-3-4 meta-data">
+                <a href="./category/gsoc.html" class="category">GSoC</a><br />
+
+                <a class="author" href="./author/anant-joshi.html">Anant Joshi</a>
+                &mdash; <abbr title="2018-06-13T00:00:00+05:30">Wed 13 June 2018</abbr>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-header-container">
+        <div class="background-image-container">
+
+            <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.imgur.com/x7I3Z6I.png);">
+                <img src="https://i.imgur.com/x7I3Z6I.png" alt="Google Summer of Code 2018">
+                <div class="title">
+                <h1>
+                    Google Summer of Code 2018
+                </h1>
+                <h2>
+                    The Honeynet Project
+                </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="entry-content">
+        <h1>DroidBotRecorder</h1>
+<p>I have been working on DroidBotRecorder, as a part of Google Summer of Code 2018.
+It is an interaction recorder created to aid semi-automated testing using DroidBot.  </p>
+<h2>Introduction</h2>
+<p>Most (if not all) automated testing programs have the inherent limitation in that
+they cannot perform <em>all</em> aspects of testing, due to conditions like a login wall,
+or complex interactions that cannot be generated in an automated way.</p>
+<p>DroidBotRecorder solves this problem by allowing the tester to semi-automate the
+test. It aims to record interactions and allow the user to inject these interactions
+automatically during an automated test.</p>
+<h2>Project Details</h2>
+<p>The project will require the following features:</p>
+<ul>
+<li>
+<p>A front-end to capture interactions over a browser. It includes the following:</p>
+<ul>
+<li>Capturing mouse-events using JavaScript, and sending them to the server.</li>
+<li>Capturing keyboard input, and sending that to the server.</li>
+<li>Displaying the emulator screen on the webpage</li>
+<li>Additional input such as hardware buttons, sensor input, etc. (for later)</li>
+<li>Improved UI/UX</li>
+</ul>
+</li>
+<li>
+<p>A middleware to capture and inject the inputs from the front-end, and stream
+ the device display to the front-end. It needs:</p>
+<ul>
+<li>A webserver to display the webpage</li>
+<li>Logic to inject the events to the android device </li>
+<li>A component to stream the device screen to a webpage</li>
+</ul>
+</li>
+<li>
+<p>An analyzer that constructs UI interactions from traces. It needs:</p>
+<ul>
+<li>Logging the input events to a file.</li>
+<li>Constructing a UI tree for every screen that is encountered.</li>
+<li>Correlating input to the UI.</li>
+</ul>
+</li>
+</ul>
+<h2>Progress</h2>
+<p>As of the first evaluation, I have completed the following:</p>
+<ul>
+<li>Capturing mouse events and sending them to the server.</li>
+<li>Created the webserver for handling input.</li>
+<li>Injecting input recieved to the android device.</li>
+</ul>
+    </div>
+
+    <footer>
+        <div class="tags">
+            <a href="./tag/gsoc.html">GSoC</a>
+            <a href="./tag/android.html">Android</a>
+            <a href="./tag/honeynet-project.html">Honeynet Project</a>
+        </div>
+        <div class="pure-g post-footer">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="pure-g poster-info">
+                    <div class="pure-u-3-4">
+                        <h3 class="author-name"><a href="./author/anant-joshi.html">Anant Joshi</a></h3>
+                        <p class="author-description">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+
+</body>
+</html>
